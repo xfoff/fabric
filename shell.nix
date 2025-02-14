@@ -33,9 +33,9 @@ pkgs.mkShell {
     })
 
     (pkgs.rustPlatform.buildRustPackage {
-      pname = "gensomething";
+      pname = "gengir";
       version = "1.0.0";
-      cargoLock.lockFile = ./Cargo.lock;
+      cargoHash = "sha256-l3bL8hwRJs+JW9bGC31WIwbel9XeWJOoEaw/K/2W9pg=";
 
       src = pkgs.fetchFromGitHub {
         owner = "santiagocezar";
